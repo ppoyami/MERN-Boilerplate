@@ -27,9 +27,14 @@ exports.post_join = (req, res) => {
     gender: '선택안함'
  }
   */
-  const user = new User(req.body);
-
-  console.log('req.body', req.body);
+  const { year, month, day, ...rest } = req.body;
+  const birth = new Date(
+    Number(year),
+    Number(month) - 1,
+    Number(day)
+  ).toISOString();
+  console.log(birth);
+  const user = new User({ ...rest, birth });
 
   user.save((err, user) => {
     if (err)

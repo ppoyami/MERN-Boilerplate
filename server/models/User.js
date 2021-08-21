@@ -16,6 +16,12 @@ const userSchema = mongoose.Schema({
     trim: true,
     unique: 1,
   },
+  birth: {
+    type: String,
+  },
+  gender: {
+    type: String,
+  },
   image: String,
   password: {
     type: String,
