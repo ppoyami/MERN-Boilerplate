@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
-import { login } from '../../../store/modules/loginReducer';
+import { login } from '../../../store/modules/user';
 import { show } from '../../../store/modules/bannerReducer';
 
 import * as S from './Form.styled';

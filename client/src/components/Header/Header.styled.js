@@ -25,3 +25,10 @@ export const Li = styled(Link)`
   font-size: 2.5rem;
   font-weight: 300;
 `;
+
+export const Liel = styled.li`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.BLACK};
+  font-size: 2.5rem;
+  font-weight: 300;
+`;

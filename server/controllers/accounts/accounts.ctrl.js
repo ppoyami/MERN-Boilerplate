@@ -77,7 +77,7 @@ exports.post_login = (req, res) => {
           .status(200)
           .json({
             loggedIn: true,
-            userId: user._id,
+            user,
             message: `${user.name}님 환영합니다.`,
           });
       });

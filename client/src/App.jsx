@@ -12,6 +12,7 @@ import Header from './components/Header';
 import Home from './page/Home';
 import Login from './page/Login';
 import Signup from './page/Signup';
+import Profile from './page/Profile';
 import Banner from './components/Banner';
 import { useSelector } from 'react-redux';
 
@@ -26,6 +27,7 @@ function App() {
           <S.Main>
             <Switch>
               <Route exact path={ROUTE.HOME} component={Home} />
+              <Route exact path={ROUTE.PROFILE} component={Profile} />
               <RouteWithLayout
                 exact
                 path={ROUTE.LOGIN}

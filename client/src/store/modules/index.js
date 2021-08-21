@@ -1,14 +1,10 @@
 import { combineReducers } from 'redux';
 
-import joinReducer from './joinReducer';
-import loginReducer from './loginReducer';
-import logoutReducer from './logoutReducer';
+import user from './user';
 import bannerReducer from './bannerReducer';
 
 const rootReducer = combineReducers({
-  join: joinReducer,
-  login: loginReducer,
-  logout: logoutReducer,
+  user: user,
   banner: bannerReducer,
 });
 

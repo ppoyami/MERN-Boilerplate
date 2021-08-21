@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 
-import { join } from '../../../store/modules/joinReducer';
+import { join } from '../../../store/modules/user';
 import { show } from '../../../store/modules/bannerReducer';
 
 import * as S from './Form.styled';

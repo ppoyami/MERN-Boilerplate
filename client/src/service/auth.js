@@ -9,7 +9,7 @@ export default class Auth {
     return this.api.post('/login', data, { withCredentials: true });
   }
   logout() {
-    return this.api.get('/logout');
+    return this.api.get('/logout', { withCredentials: true });
   }
   auth() {
     return this.api.get('/auth');
