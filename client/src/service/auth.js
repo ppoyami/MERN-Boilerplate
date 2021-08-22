@@ -12,6 +12,6 @@ export default class Auth {
     return this.api.get('/logout', { withCredentials: true });
   }
   auth() {
-    return this.api.get('/auth');
+    return this.api.get('/auth', { withCredentials: true });
   }
 }
