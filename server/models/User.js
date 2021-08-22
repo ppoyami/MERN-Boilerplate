@@ -35,17 +35,6 @@ const userSchema = mongoose.Schema({
 userSchema.pre('save', function (next) {
   const user = this;
 
-  /*
-  console.log('pre', user);
-   pre {
-   _id: 6120d8afc0bb11576cc76d33,
-   password: '12345',
-   email: 'scvd07@naver.com',
-   name: '고양이'
- }
-  
-  */
-
   if (user.isModified('password')) {
     bcrypt.hash(user.password, saltRounds, function (err, hash) {
       // Store hash in your password DB.

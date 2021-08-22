@@ -26,7 +26,6 @@ exports.post_join = (req, res) => {
     Number(month) - 1,
     Number(day)
   ).toISOString();
-  console.log(birth);
   const user = new User({ ...rest, birth });
 
   user.save((err, user) => {
